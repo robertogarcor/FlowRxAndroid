@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <com.example.rgc.flowrxandroid.ui.custom.AspectRatioImageView
+        android:id="@+id/imageView_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:ratio="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/textView_title_movie"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Movie Title"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_movie" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_voteAverage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:indeterminate="false"
+        android:max="10"
+        android:progress="0"
+        android:progressDrawable="@drawable/style_progressbar_vote_average"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_movie"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_movie" />
+
+    <TextView
+        android:id="@+id/textview_voteAverage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_weight=".25"
+        android:gravity="center"
+        android:text="00%"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar_voteAverage"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_voteAverage"
+        app:layout_constraintStart_toStartOf="@+id/progressBar_voteAverage"
+        app:layout_constraintTop_toTopOf="@+id/progressBar_voteAverage"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

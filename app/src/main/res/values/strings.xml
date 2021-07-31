@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FlowRxAndroid</string>
+    <string name="app_main_name">Movies</string>
+
+    <!-- activity detail movie -->
+    <string name="act_toolbar_detail_movie_title">Detail Movie</string>
+    <string name="act_detail_movie_voteAverage">Vote Average Movie</string>
+    <string name="act_detail_movie_title">Title Movie</string>
+    <string name="act_detail_movie_overview">Overview Movie</string>
+
+    <!-- Class MovieAdapter -->
+    <string name ="url_base_poster_path">https://image.tmdb.org/t/p/w185/</string>
+
+    <!-- Class Repository -->
+    <string name ="api_key_remote_repository"></string>
+
+</resources>
