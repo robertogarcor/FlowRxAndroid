@@ -1,2 +1,2 @@
 # FlowRxAndroid
-Sample app dinamic list master-slave. Pagination scroll.
+Sample app dinamic list master-slave Rx Flow. Pagination scroll.
